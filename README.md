@@ -15,5 +15,5 @@
   - [Vite](https://vitejs.dev/)
 - [Quasar Framework](https://quasar.dev)
 - [Firebase](https://firebase.google.com/)
-- [dotenv](https://www.npmjs.com/package/dotenv
+- [dotenv](https://www.npmjs.com/package/dotenv)
 
