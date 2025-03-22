@@ -4,7 +4,7 @@
   </q-page>
 </template>
 
-<script>
+<script lang="ts">
   import {defineComponent} from 'vue'
   import * as fBase from 'boot/firebase'
   export default defineComponent({

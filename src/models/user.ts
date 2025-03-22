@@ -1,4 +1,4 @@
-import { UserInfo } from 'firebase/auth';
+import type { UserInfo } from 'firebase/auth';
 
 export interface User extends UserInfo {
   firstName?: string | null;

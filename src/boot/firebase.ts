@@ -1,12 +1,12 @@
-import { useUserStore } from '../stores/user-store';
+import { useUserStore } from 'stores/user-store';
 import { boot } from 'quasar/wrappers'
 import firebase from 'firebase/compat/app';
-import { getAuth, GoogleAuthProvider, onAuthStateChanged } from 'firebase/auth';
+import { getAuth, GoogleAuthProvider, onAuthStateChanged } from '@firebase/auth';
 import * as firebaseui from 'firebaseui'
 import 'firebaseui/dist/firebaseui.css'
 import 'firebase/compat/auth';
 import { getFirestore } from 'firebase/firestore';
-import { User } from 'src/models/user';
+import type { User } from 'src/models/user';
 
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,

@@ -1,4 +1,4 @@
-import { User } from '../models/user';
+import type { User } from '../models/user';
 import { defineStore } from 'pinia';
 import firebase from 'firebase/compat/app';
 
@@ -26,8 +26,8 @@ export const useUserStore = defineStore('authenticatedUser', {
     logout() {
       firebase.auth().signOut().then(() => {
         this.$reset();
-        this.router.push({ name: 'login' });
-      }).catch(error => console.log(error))
+        void this.router.push({ name: 'login' });
+      }).catch((error: void) => console.log(error))
     },
   },
 });
